@@ -1,0 +1,15 @@
+.Geolocation #geo-button {
+  border: 2px solid #efefef;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  position: relative;
+  right: 32px;
+  top: 16px;
+}
+
+.Geolocation #geo-button:hover {
+  background: #efefef;
+  border: 2px solid #efefef;
+  color: #6d7278;
+}

@@ -1,0 +1,12 @@
+body .container {
+  color: #efefef;
+  font-family: "Nanum Gothic", sans-serif;
+  width: 940px;
+}
+
+.main {
+  background: linear-gradient(to left bottom, #c8c8c8, #939393);
+  border-radius: 10px;
+  margin: 50px auto;
+  padding: 60px 80px 20px;
+}

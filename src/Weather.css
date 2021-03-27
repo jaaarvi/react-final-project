@@ -1,0 +1,58 @@
+.Weather #location {
+  font-size: 48px;
+}
+
+.Weather .time {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.Weather .current-weather {
+  background: none;
+  border: 2px solid #efefef;
+  border-radius: 5px;
+  height: 250px;
+  padding-left: 20px;
+  padding-top: 20px;
+  width: 380px;
+}
+
+.Weather .current-details {
+  background: #efefef;
+  border: none;
+  border-radius: 5px;
+  color: #6d7278;
+  font-size: 13px;
+  padding: 36px;
+  width: 300px;
+  height: 220px;
+  position: relative;
+  top: -50px;
+}
+
+.Weather .details-data {
+  width: 200px;
+}
+
+.Weather .other-weather {
+  text-align: right;
+}
+
+.Weather .units {
+  color: #efefef;
+  font-size: 13px;
+  position: relative;
+  text-align: center;
+  top: -50px;
+}
+
+.Weather .units a {
+  color: #efefef;
+  cursor: default;
+  text-decoration: none;
+}
+
+.Weather a.inactive {
+  text-decoration: underline;
+  cursor: pointer;
+}

@@ -1,0 +1,14 @@
+.ForecastData .forecast-day {
+  position: relative;
+  top: 30px;
+}
+
+.ForecastData .forecast-icon {
+  width: 80px;
+}
+
+.ForecastData .forecast-temp {
+  text-align: right;
+  position: relative;
+  top: 20px;
+}

@@ -1,0 +1,16 @@
+.Forecast .forecast-card {
+  border-radius: 5px;
+  height: 480px;
+  background: #efefef;
+  border: none;
+  border-radius: 5px;
+  color: #6d7278;
+  font-size: 13px;
+  padding: 36px;
+  width: 300px;
+}
+
+.Forecast #forecast-row {
+  margin-left: auto;
+  margin-right: auto;
+}
