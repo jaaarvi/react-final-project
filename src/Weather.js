@@ -39,11 +39,11 @@ export default function Weather() {
         </div>
       </div>
       <div className="units">
-        <a href="#" className="celsius-link">
+        <a href="/" className="celsius-link">
           celsius
         </a>{" "}
         /
-        <a href="#" className="fahrenheit-link inactive">
+        <a href="/" className="fahrenheit-link inactive">
           fahrenheit
         </a>
       </div>
