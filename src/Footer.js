@@ -6,14 +6,14 @@ export default function Footer() {
     <div className="Footer">
       <span className="credits">
         <a
-          href="https://github.com/jaaarvi/SheCodes-Plus-Weather-App"
+          href="https://github.com/jaaarvi/react-final-project"
           target="_blank"
           className="github-source"
           rel="noreferrer"
         >
           Open-source code
         </a>
-        by Jes Jarvinen
+        {" "}by Jes Jarvinen
       </span>
     </div>
   );
