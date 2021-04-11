@@ -34,8 +34,8 @@ export default function UnitConversion(props) {
   <span className="temp" id="temp">
             {Math.round(fahrenheitTemp)}
           </span>
-         <span className="units"><a href="/" onClick={changeToCelsius}>
-          °C
+         <span className="units">°<a href="/" onClick={changeToCelsius}>
+          C
         </a>
         {" "}| 
         F</span>
