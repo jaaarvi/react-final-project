@@ -6,11 +6,3 @@
 
 .CurrentWeather #current-icon {
 }
-
-.CurrentWeather #temp {
-  font-size: 60px;
-  line-height: 52px;
-  position: relative;
-  top: 24px;
-  left: 36px;
-}

@@ -2,11 +2,6 @@
   font-size: 48px;
 }
 
-.Weather .time {
-  font-size: 13px;
-  font-weight: 700;
-}
-
 .Weather .current-weather {
   background: none;
   border: 2px solid #efefef;
@@ -36,23 +31,4 @@
 
 .Weather .other-weather {
   text-align: right;
-}
-
-.Weather .units {
-  color: #efefef;
-  font-size: 13px;
-  position: relative;
-  text-align: center;
-  top: -50px;
-}
-
-.Weather .units a {
-  color: #efefef;
-  cursor: default;
-  text-decoration: none;
-}
-
-.Weather a.inactive {
-  text-decoration: underline;
-  cursor: pointer;
 }

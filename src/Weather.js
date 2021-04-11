@@ -17,7 +17,7 @@ export default function Weather() {
       wind: Math.round(response.data.wind.speed),
       humidity: response.data.main.humidity,
       description: response.data.weather[0].description,
-      icon: response.data.weather[0].icon,
+      icon: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       feelslike: Math.round(response.data.main.feels_like),
       time: response.data.dt
     });
@@ -54,7 +54,8 @@ export default function Weather() {
           <div className="other-details">
             <span id="desc">{weatherData.description}</span>
             <br />
-            feels like <span id="feels-like">{weatherData.feelslike}</span>°<br />
+            feels like <span id="feels-like">{weatherData.feelslike}</span>°
+            <br />
           </div>
           <br />
           <br />
@@ -63,15 +64,6 @@ export default function Weather() {
             <span id="wind">{weatherData.wind}</span> m/s wind speed
           </div>
         </div>
-      </div>
-      <div className="units">
-        <a href="/" className="celsius-link">
-          celsius
-        </a>{" "}
-        /
-        <a href="/" className="fahrenheit-link inactive">
-          fahrenheit
-        </a>
       </div>
     </div>
   );} else {
