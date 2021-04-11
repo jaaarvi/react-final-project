@@ -1,74 +1,43 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Weather.css";
 import Geolocation from "./Geolocation";
 import CurrentWeather from "./CurrentWeather";
 import DisplayTime from "./DisplayTime";
-import axios from "axios";
 
-export default function Weather() {
-  const [ready,setReady] = useState(false);
-  const [weatherData,setWeatherData] = useState({});
-
-  function handleCall(response) {
-    console.log(response);
-    setWeatherData({
-      name: response.data.name,
-      temperature: Math.round(response.data.main.temp),
-      wind: Math.round(response.data.wind.speed),
-      humidity: response.data.main.humidity,
-      description: response.data.weather[0].description,
-      icon: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
-      feelslike: Math.round(response.data.main.feels_like),
-      time: response.data.dt
-    });
-    setReady(true); 
-  }
-
-  function displayWeather() {
-    let apiKey = "d5b0c74c5eb60f41476746edc89afb39";
-    let city = "tokyo";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-
-    axios.get(apiUrl).then(handleCall);
-  }
-
-  if (ready === true) {return (
+export default function Weather(props) {
+return (
     <div className="Weather">
       <br />
       <br />
       <div className="row">
         <div className="col-10">
-          <span id="location">{weatherData.name}</span>
+          <span id="location">{props.data.name}</span>
         </div>
         <div className="col-2">
           <Geolocation />
         </div>
       </div>
       <div className="card current-weather mx-auto">
-        <DisplayTime time={weatherData.time} />
+        <DisplayTime time={props.data.time} />
         <br />
-        <CurrentWeather temperature={weatherData.temperature} description={weatherData.description} icon={weatherData.icon} />
+        <CurrentWeather temperature={props.data.temperature} description={props.data.description} icon={props.data.icon} />
       </div>
       <div className="card current-details mx-auto">
         <div className="details-data position-absolute top-50 start-50 translate-middle">
           <div className="other-details">
-            <span id="desc">{weatherData.description}</span>
+            <span id="desc">{props.data.description}</span>
             <br />
-            feels like <span id="feels-like">{weatherData.feelslike}</span>°
+            feels like <span id="feels-like">{props.data.feelslike}</span>°
             <br />
           </div>
           <br />
           <br />
           <div className="other-weather">
-            <span id="humid">{weatherData.humidity}</span>% humidity <br />
-            <span id="wind">{weatherData.wind}</span> m/s wind speed
+            <span id="humid">{props.data.humidity}</span>% humidity <br />
+            <span id="wind">{props.data.wind}</span> m/s wind speed
           </div>
         </div>
       </div>
     </div>
-  );} else {
-    displayWeather();
-
-    return ("Loading...");
-  }
+  );
 }

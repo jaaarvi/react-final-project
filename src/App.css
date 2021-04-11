@@ -28,6 +28,28 @@
   color: #61dafb;
 }
 
+.App #search-form {
+  height: 38px;
+  width: 300px;
+}
+
+.App #search-input {
+  background: #efefef;
+  border: 2px solid #efefef;
+  border-radius: 5px 0 0 5px;
+  color: #6d7278;
+}
+
+.App #search-form button {
+  border: 2px solid #efefef;
+}
+
+.App #search-form button:hover {
+  background: #efefef;
+  border: 2px solid #efefef;
+  color: #6d7278;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
