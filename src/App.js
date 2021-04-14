@@ -19,6 +19,7 @@ export default function App() {
       icon: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       feelslike: Math.round(response.data.main.feels_like),
       time: response.data.dt,
+      coordinates: response.data.coord,
       ready: true
     });
   }
@@ -66,7 +67,7 @@ function newSearch(event) {
                 </button>
               </form>
             </div>
-            <Forecast />
+            <Forecast coordinates={weatherData.coordinates} />
           </div>
         </div>
       </div>

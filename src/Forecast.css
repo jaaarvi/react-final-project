@@ -1,11 +1,10 @@
 .Forecast .forecast-card {
   border-radius: 5px;
-  height: 485px;
-  background: #efefef;
-  border: none;
+  background: none;
+  border: 2px solid #efefef;
   border-radius: 5px;
-  color: #6d7278;
   font-size: 13px;
+  height: 485px;
   padding: 36px;
   width: 300px;
 }

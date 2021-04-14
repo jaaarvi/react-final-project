@@ -1,6 +1,6 @@
 import React from "react";
 import "./Weather.css";
-import Geolocation from "./Geolocation";
+// import Geolocation from "./Geolocation";
 import CurrentWeather from "./CurrentWeather";
 import DisplayTime from "./DisplayTime";
 
@@ -14,7 +14,7 @@ return (
           <span id="location">{props.data.name}</span>
         </div>
         <div className="col-2">
-          <Geolocation />
+          {/* <Geolocation /> */}
         </div>
       </div>
       <div className="card current-weather mx-auto">
