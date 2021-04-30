@@ -14,7 +14,7 @@ export default function ForecastData(props) {
   return (
     <div className="ForecastData">
       <div className="row" id="forecast-row">
-        <div className="col-3">
+        <div className="col-4">
           <span className="forecast-date"><ForecastDate date={forecastData.date} /></span>
         </div>
         <div className="col-3">
@@ -24,7 +24,7 @@ export default function ForecastData(props) {
             className="forecast-icon"
           />
         </div>
-        <div className="col-6 text-end">
+        <div className="col-5 text-end">
           <span className="forecast-temp">
             high {forecastData.maximumTemp}°
             <br />
